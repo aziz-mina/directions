@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Mabry';
+    src: url('/fonts/MabryPro-Regular.woff');
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+
+}
+body{
+    font-family: 'Mabry';
+    font-size: 1rem;
+    line-height: 1.6;
+    height: 100%;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+}
+span{
+    color:red;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/wall.jpg');
+    background-size: cover;
+}
+.login-form{
+    border-radius:8px;
+    width: 390px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    background: #ffffff;
+}
+.form-input{
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 5px;
+    width: 100%;
+}
+
+.form-input:focus {
+    border-radius:2px;
+    outline: none !important;
+    box-shadow: 0 0 2px #157347;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-button{
+    background: #b68934;
+    border: 1px solid #ddd;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.form-button:hover{
+    background: #69c8e7;
+}
+.form-header{
+    text-align: center;
+    margin-bottom : 2rem;
+}
+.form-footer{
+    text-align: center;
+}
+a{
+    text-decoration:none;
+}
+
+.footer-text{
+    font-size:12px ;
+    text-align:center;
+    margin-bottom:-5px;
+}
+/* .footer-me{
+    font-size:12px ;
+    text-align:center;
+    margin-bottom:3px;
+    margin-bottom:-5px;
+} */
+.footer-reset{
+    margin-top:14px;
+    font-size:12px ;
+    text-align:center;
+    margin-bottom:-5px;
+}
+.footer-reset a, .footer-text a{
+   font-weight: 600;
+}
+.remember-txt{
+    font-size:13px ;
+    text-align:center;
+}
+.remember-check{
+    font-size:13px ;
+    text-align:center;
+}
+
