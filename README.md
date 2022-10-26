@@ -1,4 +1,4 @@
-# <img height="24" src="https://i.imgur.com/ZzJeukt.png">   Directions
+# <img height="30" src="https://i.imgur.com/ZzJeukt.png">   Directions
 Social network app for discussing every life topics such as Reddit ( Laravel , Livewire )
 
 
@@ -13,11 +13,12 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 <code><img height="20" src="https://cdn.cdnlogo.com/logos/t/58/tailwindcss.svg"></code>
 <code><img height="24" src="https://laracasts.com/images/topics/icons/livewire-logo.svg"></code>
 <code><img height="24" src="https://cdn.cdnlogo.com/logos/l/23/laravel.svg"></code>
+<code><img height="24" src="https://cdn.cdnlogo.com/logos/m/6/mariadb.svg"></code>
 
 
 **Installation:** 
 
-`
+
 1. Clone the repo or download it and get into it
 2. Run `composer install`
 3. Run `npm install`
@@ -27,7 +28,7 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 7. Run command `php artisan migrate:fresh --seed` to seed data
 8. Run command `php artisan serve`
 9. Browse `localhost:8000` in your browser
-`
+
 
 **ScreenShoots From Project:**  
 
