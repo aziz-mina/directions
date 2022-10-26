@@ -4,7 +4,7 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 
 **Live Demo:** 
 
-<a href="my-directions.me/"> My-directions.me (comming soon) </a>
+<a href="https://www.my-directions.me/"> My-Directions.Me (comming soon) </a>
 
 **Languages and Technologies used:**  
 
