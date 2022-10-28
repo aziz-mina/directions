@@ -27,7 +27,7 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
     <img height="20" src="https://cdn.cdnlogo.com/logos/t/58/tailwindcss.svg"> &nbsp;
     <img height="24" src="https://cdn.cdnlogo.com/logos/l/23/laravel.svg"> &nbsp;
     <img height="25" src="https://laracasts.com/images/topics/icons/livewire-logo.svg"> &nbsp;
-    <img height="26" src="https://cdn.cdnlogo.com/logos/m/47/mysql.svg"> &nbsp;
+    <img height="27" src="https://cdn.cdnlogo.com/logos/m/47/mysql.svg"> &nbsp;
 </p>
 
 ## Installation:
