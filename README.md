@@ -6,8 +6,8 @@
     <a href="https://www.my-directions.me">
         <img src="public/version-badge.svg" alt="Version" />
     </a>
-    <a href="https://laravel.com/">
-        <img src="public/Laravel-version.svg" alt="Laravel" />
+    <a href="https://www.laravel.com/">
+        <img src="public/laravel-version.svg" alt="Laravel" />
     </a>
 </p>
 
