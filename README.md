@@ -6,9 +6,9 @@
     <a href="https://www.my-directions.me">
         <img src="public/version-badge.svg" alt="Version" />
     </a>
-     <a href="https://visitor-badge.laobi.icu/badge?page_id=mina-isaac-99/directions">
+     <span>
         ![account visitors](https://visitor-badge.laobi.icu/badge?page_id=mina-isaac-99/directions)
-    </a>
+    </span>
 </p>
 
 # Directions
@@ -43,12 +43,12 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 ## Login Data: 
 
 Admin:
-Email: admin@admin.com
-Pass : admin
+`Email: admin@admin.com
+Pass : admin`
 
 User:
-Email: user@user.com
-pass : user
+`Email: user@user.com
+pass : user`
 
 ## ScreenShoots From Project: 
 
