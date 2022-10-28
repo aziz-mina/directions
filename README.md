@@ -17,16 +17,16 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 
 ## Live Demo
 
-<a href="https://www.my-directions.me/"> My-Directions.Me (comming soon) </a>
+<a href="https://www.my-directions.me/"> My-Directions.Me (Soon) </a>
 
 ## Languages and Technologies used:  
 
-<code><img height="24" src="https://cdn.cdnlogo.com/logos/h/90/html-5.svg"></code>
-<code><img height="20" src="https://cdn.cdnlogo.com/logos/c/18/css.svg"></code>
-<code><img height="20" src="https://cdn.cdnlogo.com/logos/t/58/tailwindcss.svg"></code>
-<code><img height="24" src="https://laracasts.com/images/topics/icons/livewire-logo.svg"></code>
-<code><img height="24" src="https://cdn.cdnlogo.com/logos/l/23/laravel.svg"></code>
-<code><img height="24" src="https://cdn.cdnlogo.com/logos/m/6/mariadb.svg"></code>
+<img height="24" src="https://cdn.cdnlogo.com/logos/h/90/html-5.svg">
+<img height="20" src="https://cdn.cdnlogo.com/logos/c/18/css.svg">
+<img height="20" src="https://cdn.cdnlogo.com/logos/t/58/tailwindcss.svg">
+<img height="24" src="https://cdn.cdnlogo.com/logos/l/23/laravel.svg">
+<img height="24" src="https://laracasts.com/images/topics/icons/livewire-logo.svg">
+<img height="24" src="https://cdn.cdnlogo.com/logos/m/6/mariadb.svg">
 
 ## Installation:
 
@@ -52,7 +52,7 @@ User:
 
 `Email: user@user.com`
 
-`pass : user`
+`password : user`
 
 ## ScreenShoots From Project: 
 
