@@ -8,8 +8,6 @@
     </a>
 </p>
 
-![repo visitors](https://visitor-badge.laobi.icu/badge?page_id=mina-isaac-99/directions)
-
 # Directions
 
 Social network app for discussing every life topics such as Reddit ( Laravel , Livewire )
@@ -43,13 +41,13 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 
 Admin:
 
-`Email: admin@admin.com
-pass : admin`
+`Email: admin@admin.com`
+`password : admin`
 
 User:
 
-`Email: user@user.com
-pass : user`
+`Email: user@user.com`
+`pass : user`
 
 ## ScreenShoots From Project: 
 
