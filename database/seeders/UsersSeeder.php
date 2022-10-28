@@ -20,8 +20,8 @@ class UsersSeeder extends Seeder
         User::factory([
             'name' => 'Mina Isaac',
             'username' => 'minaisaac99',
-            'email' => 'mina@mina.com',
-            'password' => Hash::make('mina'),
+            'email' => 'admin@admin.com',
+            'password' => Hash::make('admin'),
             'email_verified_at' => now(),
             'is_admin' => true
         ])->create();
