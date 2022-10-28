@@ -6,8 +6,9 @@
     <a href="https://www.my-directions.me">
         <img src="public/version-badge.svg" alt="Version" />
     </a>
-    ![account visitors](https://visitor-badge.laobi.icu/badge?page_id=mina-isaac-99/directions)
 </p>
+
+![repo visitors](https://visitor-badge.laobi.icu/badge?page_id=mina-isaac-99/directions)
 
 # Directions
 
