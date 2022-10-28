@@ -1,12 +1,22 @@
-# <img height="30" src="https://i.imgur.com/ZzJeukt.png">   Directions
+<p align="center">
+    <img src="public/Directions_logo.svg" width="400" alt="logo"/>
+</p>
+
+<p align="center">
+    <a href="https://www.my-directions.me">
+        <img src="public/version-badge.svg" alt="Version" />
+    </a>
+</p>
+
+# Directions
+
 Social network app for discussing every life topics such as Reddit ( Laravel , Livewire )
 
-
-**Live Demo:** 
+## Live Demo
 
 <a href="https://www.my-directions.me/"> My-Directions.Me (comming soon) </a>
 
-**Languages and Technologies used:**  
+## Languages and Technologies used:  
 
 <code><img height="24" src="https://cdn.cdnlogo.com/logos/h/90/html-5.svg"></code>
 <code><img height="20" src="https://cdn.cdnlogo.com/logos/c/18/css.svg"></code>
@@ -15,9 +25,7 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 <code><img height="24" src="https://cdn.cdnlogo.com/logos/l/23/laravel.svg"></code>
 <code><img height="24" src="https://cdn.cdnlogo.com/logos/m/6/mariadb.svg"></code>
 
-
-**Installation:** 
-
+## Installation:
 
 1. Clone the repo or download it and get into it
 2. Run `composer install`
@@ -29,8 +37,7 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 8. Run command `php artisan serve`
 9. Browse `localhost:8000` in your browser
 
-
-**ScreenShoots From Project:**  
+## ScreenShoots From Project: 
 
 <img src="https://i.imgur.com/24FyhLf.jpg" width="300px"> 
 
@@ -42,8 +49,7 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 
 <img src="https://i.imgur.com/2gOqDhY.jpg" width="300px"> 
 
-
-**ToDo Next:** 
+## Todo in next Version:
 
 1. Elastic Search
 2. Moderators for communities
