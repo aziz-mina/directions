@@ -22,12 +22,12 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 ## Languages and Technologies used:  
 
 <p align="left">
-    <img height="25" src="https://cdn.cdnlogo.com/logos/h/90/html-5.svg">  
-    <img height="21" src="https://cdn.cdnlogo.com/logos/c/18/css.svg"> 
-    <img height="20" src="https://cdn.cdnlogo.com/logos/t/58/tailwindcss.svg">
-    <img height="24" src="https://cdn.cdnlogo.com/logos/l/23/laravel.svg"> 
-    <img height="25" src="https://laracasts.com/images/topics/icons/livewire-logo.svg">
-    <img height="26" src="https://cdn.cdnlogo.com/logos/m/47/mysql.svg">
+    <img height="25" src="https://cdn.cdnlogo.com/logos/h/90/html-5.svg"> &nbsp;
+    <img height="21" src="https://cdn.cdnlogo.com/logos/c/18/css.svg"> &nbsp;
+    <img height="20" src="https://cdn.cdnlogo.com/logos/t/58/tailwindcss.svg"> &nbsp;
+    <img height="24" src="https://cdn.cdnlogo.com/logos/l/23/laravel.svg"> &nbsp;
+    <img height="25" src="https://laracasts.com/images/topics/icons/livewire-logo.svg"> &nbsp;
+    <img height="26" src="https://cdn.cdnlogo.com/logos/m/47/mysql.svg"> &nbsp;
 </p>
 
 ## Installation:
