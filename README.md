@@ -6,6 +6,9 @@
     <a href="https://www.my-directions.me">
         <img src="public/version-badge.svg" alt="Version" />
     </a>
+     <a href="https://visitor-badge.laobi.icu/badge?page_id=mina-isaac-99/directions">
+        ![account visitors](https://visitor-badge.laobi.icu/badge?page_id=mina-isaac-99/directions)
+    </a>
 </p>
 
 # Directions
@@ -36,6 +39,16 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 7. Run command `php artisan migrate:fresh --seed` to seed data
 8. Run command `php artisan serve`
 9. Browse `localhost:8000` in your browser
+
+## Login Data: 
+
+Admin:
+Email: admin@admin.com
+Pass : admin
+
+User:
+Email: user@user.com
+pass : user
 
 ## ScreenShoots From Project: 
 
