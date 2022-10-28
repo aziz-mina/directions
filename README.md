@@ -6,6 +6,9 @@
     <a href="https://www.my-directions.me">
         <img src="public/version-badge.svg" alt="Version" />
     </a>
+    <a href="https://laravel.com/">
+        <img src="public/Laravel-version.svg" alt="Laravel" />
+    </a>
 </p>
 
 # Directions
@@ -42,11 +45,13 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 Admin:
 
 `Email: admin@admin.com`
+
 `password : admin`
 
 User:
 
 `Email: user@user.com`
+
 `pass : user`
 
 ## ScreenShoots From Project: 
