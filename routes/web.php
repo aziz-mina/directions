@@ -75,8 +75,17 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
             ->name('users.remove');
     });
 
-    Route::post('posts/{postId}/report', [CommunityPostController::class, 'report'])
-        ->name('post.report');
+    Route::group(['prefix' => 'mystuff'], function () {
+
+        Route::post('{postId}/save', [CommunityPostController::class, 'save'])
+            ->name('post.save');
+
+        Route::post('{postId}/unsave', [CommunityPostController::class, 'unsave'])
+            ->name('post.unsave');
+
+        Route::post('{postId}/report', [CommunityPostController::class, 'report'])
+            ->name('post.report');
+    });
 
     Route::post('user/{userId}/report', [UserController::class, 'report'])
         ->name('user.report');
