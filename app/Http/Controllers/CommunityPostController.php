@@ -219,16 +219,21 @@ class CommunityPostController extends Controller
         return redirect()->back();
     }
 
-    public function savePost($post_id)
+    public function save($postId)
     {
-        $post = Post::findOrFail($post_id);
-
         SavedPost::create([
             'user_id' => auth()->id(),
-            'post_id' => $post_id
+            'post_id' => $postId
         ]);
 
         flash()->addSuccess('Post Saved Successfully');
+        return redirect()->back();
+    }
+
+    public function unsave($postId)
+    {
+        $saved_post = SavedPost::where('user_id',auth()->id())->where('post_id',$postId)->delete();
+        flash()->addSuccess('Post UnSaved Successfully');
         return redirect()->back();
     }
 }
