@@ -8,6 +8,7 @@ use App\Models\Post;
 use App\Http\Requests\StorePostRequest;
 use App\Models\Comment;
 use App\Models\PostVotes;
+use App\Models\SavedPost;
 use App\Models\UserCommunity;
 use App\Notifications\PostReportNotification;
 use Illuminate\Support\Facades\Gate;
@@ -215,6 +216,19 @@ class CommunityPostController extends Controller
 
         Post::where('community_id', $community->id)->update(['approved' => 1]);
         flash()->addSuccess('Report Approved Successfully');
+        return redirect()->back();
+    }
+
+    public function savePost($post_id)
+    {
+        $post = Post::findOrFail($post_id);
+
+        SavedPost::create([
+            'user_id' => auth()->id(),
+            'post_id' => $post_id
+        ]);
+
+        flash()->addSuccess('Post Saved Successfully');
         return redirect()->back();
     }
 }
