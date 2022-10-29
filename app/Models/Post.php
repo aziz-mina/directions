@@ -34,6 +34,18 @@ class Post extends Model
         return $this->hasMany(PostVotes::class);
     }
 
+    public function savedPosts()
+    {
+        return $this->hasMany(SavedPost::class);
+    }
+
+    public function isSaved($postid)
+    {
+        $isSaved = SavedPost::where(['user_id' => auth()->id() , 'post_id'=> $postid])
+            ->count() == 1 ? true : false;
+        return $isSaved ;
+    }
+
     public function sluggable(): array
     {
         return [
