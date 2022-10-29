@@ -13,7 +13,7 @@
 
     @include('layouts.partials.filters')
 
-    @forelse ($posts as $post)
+    @forelse ($posts  as $index => $post)
         @include('components.post-card', $post)
     @empty
         <h4 class="text-center text-secondary my-5">
@@ -21,6 +21,4 @@
             <p class="text-lg">No posts added yet</p>
         </h4>
     @endforelse
-
-    @include('layouts.partials.modal')
 @endsection
