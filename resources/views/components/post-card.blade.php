@@ -66,7 +66,30 @@
                     <span class="ml-2 text-xs font-semibold text-grey">Share</span>
                 </button>
             </div>
+
             @include('layouts.partials.modal')
+            
+            @if(!$post->isSaved($post->id))
+                <form action="{{ route('post.save', [$post->id]) }}" method="POST">
+                    @csrf
+                    <button type="submit" class="flex hover:bg-grey-lighter p-1 ml-2 no-underline">
+                        <i class="far fa-bookmark text-grey"></i>
+                        <span class="ml-2 text-xs font-semibold text-grey">
+                            Save
+                        </span>
+                    </button>
+                </form>
+            @else
+                <form action="{{ route('post.unsave', [$post->id]) }}" method="POST">
+                    @csrf
+                    <button type="submit" class="flex hover:bg-grey-lighter p-1 ml-2 no-underline">
+                        <i class="fas fa-times-circle text-grey"></i>
+                        <span class="ml-2 text-xs font-semibold text-grey">
+                        Unsave
+                        </span>
+                    </button>
+                </form>
+            @endif
             <a href="{{ route('communities.posts.show', [$post->slug]) }}"
                 class="flex hover:bg-grey-lighter p-1 ml-2 no-underline">
 
