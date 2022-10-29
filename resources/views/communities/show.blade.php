@@ -104,7 +104,7 @@
             </div>
         </div>
     </div>
-    @forelse ($posts as $post)
+    @forelse ($posts as $index => $post)
         @include('components.post-card', $post)
     @empty
         <h4 class="text-center text-secondary ">
@@ -116,8 +116,4 @@
     <div class="justify-content-center pagination">
         {{ $posts->links() }}
     </div>
-
-    @if (count($posts) > 0)
-        @include('layouts.partials.modal')
-    @endif
 @endsection
