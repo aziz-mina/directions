@@ -131,6 +131,10 @@
                                 {{ __('Manage posts') }}
                             </a>
 
+                            <a class="dropdown-item px-4 pl-5" href="{{ route('post.saved') }}">
+                                {{ __('Saved posts') }}
+                            </a>
+
                             <div class="dropdown-divider text-grey-lightest"></div>
 
                             <p class="dropdown-item text-grey-dark hover:bg-white hover:text-grey-dark px-2">

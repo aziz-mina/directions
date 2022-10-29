@@ -83,6 +83,9 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
         Route::post('{postId}/unsave', [CommunityPostController::class, 'unsave'])
             ->name('post.unsave');
 
+        Route::get('saved', [CommunityPostController::class, 'savedPosts'])
+            ->name('post.saved');
+
         Route::post('{postId}/report', [CommunityPostController::class, 'report'])
             ->name('post.report');
     });

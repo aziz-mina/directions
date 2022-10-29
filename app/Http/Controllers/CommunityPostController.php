@@ -236,4 +236,10 @@ class CommunityPostController extends Controller
         flash()->addSuccess('Post UnSaved Successfully');
         return redirect()->back();
     }
+
+    public function savedPosts()
+    {
+        $savedPosts = SavedPost::where('user_id', auth()->id())->get();
+        return view('posts.saved', compact('savedPosts'));
+    }
 }
