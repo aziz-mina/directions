@@ -232,7 +232,7 @@ class CommunityPostController extends Controller
 
     public function unsave($postId)
     {
-        $saved_post = SavedPost::where('user_id',auth()->id())->where('post_id',$postId)->delete();
+        SavedPost::where(['user_id' => auth()->id(), 'post_id' => $postId])->delete();
         flash()->addSuccess('Post UnSaved Successfully');
         return redirect()->back();
     }
