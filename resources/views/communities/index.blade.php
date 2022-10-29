@@ -29,43 +29,27 @@
 
     <div class="card">
         <div class="card-body">
-            <div class="text-center my-4">
+            <div class="text-center mt-3 mb-5">
                 <h3>Manage Communities</h3>
             </div>
             @if ($communities->count() > 0)
-                <table class="table text-center text-sm text-gray-500 dark:text-gray-400 rounded">
-                    <thead class="table-custom-bg text-xs text-white uppercase dark:text-gray-400">
-                        <tr>
-                            <th scope="col" class="py-3 px-6">
-                                ID
-                            </th>
-                            <th scope="col" class="py-3 px-6">
-                                Logo
-                            </th>
-                            <th scope="col" class="py-3 px-6">
-                                Name
-                            </th>
-                            <th scope="col" class="py-3 px-6">
-                                Action
-                            </th>
-                        </tr>
-
-                    </thead>
+                <table class="table text-center">
                     <tbody class="items-center">
                         @foreach ($communities as $community)
-                            <tr
-                                class="bg-white border-b dark:bg-gray-800  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <tr class="focus:outline-none border-top border-bottom border-gray-100">
                                 <th scope="row"
                                     class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {{ $loop->iteration }}
+                                    <span class="mx-2 font-bold">
+                                        {{ $loop->iteration }}
+                                        <i class="ml-2 fas fa-chevron-right text-blue-light"></i>
+                                    </span>
                                 </th>
                                 <td class="py-4 px-6">
                                     @if (file_exists(public_path('storage/communities/' . $community->id . '/thumbnail_' . $community->logo)))
-                                        <img class="rounded-full border h-6 w-6 mr-1"
+                                        <img class="border-image"
                                             src="{{ asset('storage/communities/' . $community->id . '/thumbnail_' . $community->logo) }}">
                                     @else
-                                        <img class="rounded-full border h-6 w-6 mr-1"
-                                            src="{{ asset('storage/communities/default.png') }}">
+                                        <img class="border-image" src="{{ asset('storage/communities/default.png') }}">
                                     @endif
                                 </td>
                                 <td class="py-4 px-6">
