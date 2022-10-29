@@ -75,7 +75,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
             ->name('users.remove');
     });
 
-    Route::group(['prefix' => 'mystuff'], function () {
+    Route::group(['prefix' => 'posts'], function () {
 
         Route::post('{postId}/save', [CommunityPostController::class, 'save'])
             ->name('post.save');
