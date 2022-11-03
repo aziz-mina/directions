@@ -16,6 +16,7 @@
         "laravel/scout": "^9.4",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
+        "league/color-extractor": "^0.4.0",
         "livewire/livewire": "^2.10",
         "php-flasher/flasher-laravel": "^1.7",
         "realrashid/sweet-alert": "^5.1",
