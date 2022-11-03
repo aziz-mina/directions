@@ -58,13 +58,13 @@
 
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="information" role="tabpanel" aria-labelledby="information-tab">
+                    <div class="head-text my-5">
+                        <h2>Update Community</h2>
+                    </div>
                     <form method="POST" action="{{ route('communities.update', $community) }}"
                         enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
-                        <div class="text-center my-5 text-grey">
-                            <h4>Update Community</h3>
-                        </div>
                         <div class="row mb-3">
                             <div class="col-md-12">
                                 <input id="name" type="text"
@@ -132,8 +132,8 @@
                 </div>
 
                 <div class="tab-pane fade" id="posts" role="tabpanel" aria-labelledby="posts-tab">
-                    <div class="text-center  my-5 text-grey">
-                        <h4>{{ $community->name }}'s Posts Request</h3>
+                    <div class="head-text my-5">
+                        <h2>{{ $community->name }}'s Posts Request</h2>
                     </div>
                     @if ($postRequests->count() > 0)
                         <table class="table text-center text-sm text-gray-500 dark:text-gray-400 rounded">
@@ -189,8 +189,8 @@
                 </div>
 
                 <div class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
-                    <div class="text-center my-5 text-grey">
-                        <h4>Manage Community users</h3>
+                    <div class="head-text my-5">
+                        <h2>Manage Community users</h2>
                     </div>
                     @if ($communityUsers->count() > 0)
                         <table class="table text-center">
@@ -244,8 +244,8 @@
                     @endif
                 </div>
                 <div class="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="delete-tab">
-                    <div class="text-center mt-5 mb-3 text-grey">
-                        <h4>Delete Community</h3>
+                    <div class="head-text my-5">
+                        <h2>Delete Community</h2>
                     </div>
                     <div class="text-center my-3">
                         <div class="text-xl my-2">

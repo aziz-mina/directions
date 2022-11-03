@@ -34,8 +34,8 @@
 
     <div class="card">
         <div class="card-body">
-            <div class="text-center my-4 mb-5">
-                <h3>My Posts</h3>
+            <div class="head-text my-3">
+                <h2>Manage Posts</h2>
             </div>
             @if ($myPosts->count() > 0)
                 <table class="table text-center ">

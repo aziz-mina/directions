@@ -38,12 +38,12 @@
 
     <div class="card">
         <div class="card-body">
+            <div class="head-text my-3">
+                <h2>Edit Post</h2>
+            </div>
             <form method="POST" action="{{ route('communities.posts.update', [$community, $post]) }}"
                 enctype="multipart/form-data">
                 @csrf
-                <div class="text-center mt-2 mb-3">
-                    <h3>Edit post</h3>
-                </div>
                 @method('PUT')
                 <div class="row mb-3">
                     <div class="col-md-12">

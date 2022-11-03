@@ -31,11 +31,11 @@
             </div>
         </div>
     </div>
-    {{-- {{ dd($savedPosts) }} --}}
+
     <div class="card">
         <div class="card-body">
-            <div class="text-center my-4 mb-5">
-                <h3>Saved Posts</h3>
+            <div class="head-text my-3">
+                <h2>Saved Posts</h2>
             </div>
             @if ($savedPosts->count() > 0)
                 <table class="table text-center ">

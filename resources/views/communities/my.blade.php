@@ -29,8 +29,8 @@
 
     <div class="card">
         <div class="card-body">
-            <div class="text-center mt-3 mb-5">
-                <h3>Joined Communities</h3>
+            <div class="head-text my-3">
+                <h2>Joined Communities</h2>
             </div>
             @if ($myCommunities->count() > 0)
                 <table class="table text-center">
@@ -49,8 +49,7 @@
                                         <img class="border-image"
                                             src="{{ asset('storage/communities/' . $community->Community->id . '/thumbnail_' . $community->Community->logo) }}">
                                     @else
-                                        <img class="border-image"
-                                            src="{{ asset('storage/communities/default.png') }}">
+                                        <img class="border-image" src="{{ asset('storage/communities/default.png') }}">
                                     @endif
                                 </td>
                                 <td class="py-4 px-6">

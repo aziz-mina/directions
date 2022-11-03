@@ -16,7 +16,7 @@
                         <li class="crumb active">
                             <div class="bredcrumb-link">
                                 <span aria-current="location">
-                                   Top {{ $topic->name }} Communities
+                                    Top {{ $topic->name }} Communities
                                 </span>
                             </div>
                         </li>
@@ -28,10 +28,9 @@
 
     <div class="card">
         <div class="card-body">
-            <div class="text-center mt-3 mb-5">
-                <h3> {{ $topic->name }} Communities</h3>
+            <div class="head-text my-3">
+                <h2>{{ $topic->name }} Communities</h2>
             </div>
-
             @if ($communities->count() > 0)
                 <table class="table">
                     <tbody class="items-center">
@@ -54,7 +53,7 @@
                                     <span class="ml-2">
                                         dir/ {{ $community->name }}
                                     </span>
-                                   
+
                                 </td>
                                 <td class="py-4 px-6 text-center">
                                     <a href="{{ route('communities.show', [$community->slug]) }}"

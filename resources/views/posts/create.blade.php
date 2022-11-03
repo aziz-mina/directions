@@ -38,11 +38,11 @@
 
     <div class="card">
         <div class="card-body">
+            <div class="head-text my-3">
+                <h2>Create Post</h2>
+            </div>
             <form method="POST" action="{{ route('communities.posts.store', $community) }}" enctype="multipart/form-data">
                 @csrf
-                <div class="text-center mt-2 mb-3">
-                    <h3>Create post</h3>
-                </div>
                 <div class="row mb-3">
                     <div class="col-md-12">
                         <input id="title" type="text"

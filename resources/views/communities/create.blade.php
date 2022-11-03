@@ -28,11 +28,11 @@
 
     <div class="card">
         <div class="card-body">
+            <div class="head-text">
+                <h2>Сreate Community</h2>
+            </div>
             <form method="POST" action="{{ route('communities.store') }}" enctype="multipart/form-data">
                 @csrf
-                <div class="text-center mt-2 mb-5">
-                    <h3>Create Community</h3>
-                </div>
                 <div class="row mb-3">
                     <div class="col-md-12">
                         <input id="name" type="text"
@@ -47,7 +47,6 @@
                         @enderror
                     </div>
                 </div>
-
 
                 <div class="row mb-3">
                     <div class="col-md-12">

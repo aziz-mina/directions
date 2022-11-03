@@ -8,6 +8,25 @@
     height:30px;
 }
 
+.head-text h2 {
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+}
+
+.head-text h2::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  border: 1px solid #1380d3;
+  background-color: #1380d3;
+}
+
 .nav-avatar{
     width:30px;
     height:30px;
@@ -431,7 +450,7 @@
 
 .community-cover{
     height:5rem;
-    background: url('/background.webp');
+    /* background: url('/background.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;

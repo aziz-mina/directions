@@ -51,12 +51,11 @@
 
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="information" role="tabpanel" aria-labelledby="information-tab">
+                    <div class="head-text mt-5 mb-1">
+                        <h2>Update Profile</h2>
+                    </div>
                     <form method="POST" action="{{ route('profile.edit') }}">
                         @csrf
-                        <div class="text-center mt-5 text-grey">
-                            <h4>Update Information</h3>
-                        </div>
-
                         <div class="row mb-3">
                             <div class="col-md-12">
                                 Your Username
@@ -105,11 +104,11 @@
                     </form>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="head-text mt-5 mb-1">
+                        <h2>Update Avatar</h2>
+                    </div>
                     <form method="POST" action="{{ route('profile.update') }}" enctype="multipart/form-data">
                         @csrf
-                        <div class="text-center mt-5 mb-3 text-grey">
-                            <h4>Update Avatar</h3>
-                        </div>
                         <span class="text-center">
                             @if (file_exists(public_path('storage/users/' . auth()->id() . '/thumbnail_' . Auth::user()->avatar)))
                                 <img src="{{ asset('storage/users/' . auth()->id() . '/thumbnail_' . Auth::user()->avatar) }}"
@@ -138,11 +137,11 @@
                     </form>
                 </div>
                 <div class="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="delete-tab">
+                    <div class="head-text mt-5 mb-1">
+                        <h2>Delete Profile</h2>
+                    </div>
                     <form method="POST" action="{{ route('profile.delete') }}">
                         @csrf
-                        <div class="text-center mt-5 mb-3 text-grey">
-                            <h4>Delete account</h3>
-                        </div>
                         <div class="text-center my-3">
                             <div class="text-xl my-2">
                                 <i class="fad fa-engine-warning text-red-dark"></i>
@@ -168,12 +167,11 @@
                     </form>
                 </div>
                 <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                    <div class="head-text mt-5 mb-1">
+                        <h2>Change Password</h2>
+                    </div>
                     <form method="POST" action="{{ route('profile.edit') }}">
                         @csrf
-                        <div class="text-center mt-5 text-grey">
-                            <h4>Update Password</h3>
-                        </div>
-
                         <div class="row mb-3">
                             <div class="col-md-12">
                                 Old Password

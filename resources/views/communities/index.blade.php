@@ -29,8 +29,8 @@
 
     <div class="card">
         <div class="card-body">
-            <div class="text-center mt-3 mb-5">
-                <h3>Manage Communities</h3>
+            <div class="head-text my-3">
+                <h2>Manage Communities</h2>
             </div>
             @if ($communities->count() > 0)
                 <table class="table text-center">
