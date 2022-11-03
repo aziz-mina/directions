@@ -1,7 +1,7 @@
 <div class="card" id="home-page">
     <div class="rounded bg-white mb-1">
         <div class="p-3">
-            <div class="w-0-5 -m-3 bg-no-repeat bg-100% info-background">
+            <div class="w-0-5 -m-3 bg-no-repeat bg-100%" style="background-color: {{ $community->color_palette['1'] }}">
             </div>
             <div class="text-center">
                 <div class="inline-flex items-center">
