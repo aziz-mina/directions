@@ -1,5 +1,6 @@
 <p align="center">
-    <img src="public/Directions_logo.svg" width="400" alt="logo"/>
+    <img src="public/Directions_logo.svg#gh-light-mode-only" width="400" alt="lightlogo"/>
+    <img src="public/Directions_logo-dark.svg#gh-dark-mode-only" width="400" alt="dark logo"/>
 </p>
 
 <p align="center">
