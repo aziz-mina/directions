@@ -13,7 +13,9 @@ class Community extends Model
 
     //SoftDeletes;
 
-    protected $fillable = ['user_id', 'name', 'description', 'verified', 'slug', 'logo'];
+    protected $fillable = ['user_id', 'name', 'description', 'verified', 'slug', 'logo', 'color_palette'];
+
+    protected $casts = ['color_palette' => 'array',];
 
     public function user()
     {
