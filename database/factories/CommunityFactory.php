@@ -22,6 +22,7 @@ class CommunityFactory extends Factory
             "description" => $this->faker->text(250),
             "verified" => true,
             "slug" =>  Str::slug($name),
+            "color_palette" =>  ["#41BDF3", "#85D1F3"],
         ];
     }
 }
