@@ -13,6 +13,9 @@ use App\Http\Requests\UpdateCommunityRequest;
 use App\Models\CommunityTopic;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\DB;
+use League\ColorExtractor\Color;
+use League\ColorExtractor\ColorExtractor;
+use League\ColorExtractor\Palette;
 
 class CommunityController extends Controller
 {
@@ -63,6 +66,18 @@ class CommunityController extends Controller
                 $constraint->aspectRatio();
             });
             $file->save(storage_path('app/public/communities/' . $community->id . '/thumbnail_' . $image));
+
+            $palette = Palette::fromFilename(storage_path('app/public/communities/' . $community->id . '/thumbnail_' . $image));
+
+            $extractor = new ColorExtractor($palette);
+            $colors = $extractor->extract(4);
+            $color_palette = array();
+
+            foreach ($colors as $value) {
+                $color_palette[] = Color::fromIntToHex($value);
+            }
+
+            $community->update(['color_palette' => $color_palette]);
         }
 
         // First user to join community
@@ -83,6 +98,7 @@ class CommunityController extends Controller
     public function show($slug)
     {
         $community = Community::where('slug', $slug)->firstOrFail();
+        //$color_pallete =  json_decode($community->color_palette, true);
 
         $isJoinedCommunity = UserCommunity::where('user_id', auth()->id())
             ->where('community_id', $community->id)
@@ -159,6 +175,18 @@ class CommunityController extends Controller
                 $constraint->aspectRatio();
             });
             $file->save(storage_path('app/public/communities/' . $community->id . '/thumbnail_' . $image));
+
+            $palette = Palette::fromFilename(storage_path('app/public/communities/' . $community->id . '/thumbnail_' . $image));
+
+            $extractor = new ColorExtractor($palette);
+            $colors = $extractor->extract(4);
+            $color_palette = array();
+
+            foreach ($colors as $value) {
+                $color_palette[] = Color::fromIntToHex($value);
+            }
+
+            $community->update(['color_palette' => $color_palette]);
         }
 
         flash()->addSuccess('Your Community Updated Successfully.');
@@ -182,7 +210,7 @@ class CommunityController extends Controller
 
         flash()->addSuccess('Your Community Deleted Successfully.');
 
-        return redirect()->route('communities.index')->with('message', 'Successfully Deleted');
+        return redirect()->route('communities.index');
     }
 
     public function myCommunities()
