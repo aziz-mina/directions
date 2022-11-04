@@ -5,36 +5,8 @@
 @endsection
 
 @section('content')
-    <div class="flex border border-grey-light-alt hover:border-grey rounded bg-white cursor-pointer mb-3 mt-2">
-        <div class="w-full">
-            <div class="inline-flex items-center">
-                <nav aria-label="breadcrumb ">
-                    <ol class="default-breadcrumb mt-2 -ml-5">
-                        <li class="crumb">
-                            <div class="bredcrumb-link">
-                                <a href="{{ route('home') }}">
-                                    <a href="#" class="fa fa-home"></a>
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="crumb">
-                            <div class="bredcrumb-link">
-                                <a href="{{ route('communities.show', $community->slug) }}">{{ $community->name }}</a>
-                            </div>
-                        </li>
-                        <li class="crumb active">
-                            <div class="bredcrumb-link">
-                                <span aria-current="location">
-                                    Edit Your Post
-                                </span>
-                            </div>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-    </div>
+  
+    {{ Breadcrumbs::render('editPost', $community) }}
 
     <div class="card">
         <div class="card-body">
