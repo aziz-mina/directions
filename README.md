@@ -40,8 +40,9 @@ Social network app for discussing every life topics such as Reddit ( Laravel , L
 5. Setup your database and email in `.env` file.
 6. Run command `php artisan key:generate`
 7. Run command `php artisan migrate:fresh --seed` to seed data
-8. Run command `php artisan serve`
-9. Browse `localhost:8000` in your browser
+8. Add Your SMTP Configurations in `.env` file
+9. Run command `php artisan serve`
+10. Browse `localhost:8000` in your browser
 
 ## Login Data: 
 
